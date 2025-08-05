@@ -48,7 +48,7 @@
     }
 
     button:hover {
-      background-color: #ff33dd; <!-- colre rosa sfondo aggiungi -->
+      background-color: #ff33dd; /* colre rosa sfondo aggiungi */
     }
 
     .product {
@@ -131,8 +131,11 @@
   <div>
 	<h2><label for="categorySelect" class="highlight">Snacks • Fritti • Burgers • Insalate • Messicano</label></h2>
 	<h2><label for="categorySelect" class="highlight">Dolci • Bevande • Drinks • Spritz • Birre</label></h2>
+	
+	<table border="3" cellspacing="40" cellpadding="" align="center" width="50">
+	<td  bgcolor="#4D2B6B">
     <select id="categorySelect" onchange="showProducts()">
-      <option value="">-- Seleziona --</option>
+    <option value="">-- Seleziona --</option>
 	  
 	  <!-- CATEGORIE -->
 	  
@@ -160,36 +163,65 @@
 	<!-- TESTO CHE SCORRE -->
 		  <p>
 		  <font color="#00BFFF" face="Copperplate Gothic Bold" >
-		  <marquee behavior="scroll" direction="left">SOLO PER QUESTA SETTIMANA PROVA IL NOSTRO SMASH BURGER !!</marquee>
+		  <marquee behavior="scroll" direction="left">🔧⚠️ Stiamo aggiornando il sito per offrirti un'esperienza migliore – grazie per la tua pazienza! !!</marquee>
 		  </font>
 		  </p>
 
   </div>
 
 <tr> 
+</td>
+</table>
+<table border="3" cellspacing="40" cellpadding="" align="center" width="500">
+	<td  bgcolor="#4D2B6B">
      <!-- link per instagram -->
-     <td align="right">
+     <td align="center">
        <a href="https://www.instagram.com/paradicefood_drink?igsh=ZTB1eTZnM3k0eGQx" style="color:#ff33dd; text-decoration:none;">
          <h2>📸 Seguici su Instagram</h2>
        </a>
      </td>
      <!-- link per menu-->
-     <td align="right">
-        <a href="https://drive.google.com/file/d/1evnEwlJD8_pli1PLFt9Pb9FNi4tVOAcO/view?usp=sharing" style="color:#ff33dd; text-decoration:none;">
-         <h2>📄 Scarica il menù completo in PDF</h2>
+     <td align="center">
+        <a href="http://www.google.com" style="color:#ffffff; text-decoration:none;">
+         <h2> 📥 Menu PDF</h2>
         </a>
+     </td>
+	 <!-- <p>Check out <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.</p> -->
+
+	  <!-- link per dove siamo-->
+     <td align="center">
+     <a href="https://www.google.it/maps/place/Via+Trionfale,+11407,+00135+Roma+RM/@41.9609568,12.4072265,17z/data=!3m1!4b1!4m6!3m5!1s0x132f5ddc0c11acc5:0x780b5061c9d63fb4!8m2!3d41.9609528!4d12.4098014!16s%2Fg%2F11csfhq2vg?hl=it&entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D"target="_blank" style="color:#ff33dd; text-decoration:none;">
+     <h2>dove siamo</h2>
+     </a>
+     </td>
+	 
+	 <!-- link per just eat-->
+     <td align="center">
+     <a href="http://www.google.com" style="color:#FF8000; text-decoration:none;">
+     <h2>Just Eat</h2>
+     </a>
+     </td>
+	 
+	 <!-- link per glovo-->
+     <td align="center">
+     <a href="http://www.google.com" style="color:#009B7E; text-decoration:none;">
+     <h2>Glovo</h2>
+     </a>
      </td>
 	 
 	  <!-- link per menu-->
-     <td align="right">
+     <td align="center">
      <a href="http://www.google.com" style="color:#ff33dd; text-decoration:none;">
      <h2>Consulta il Libro Allergeni</h2>
      </a>
      </td>
 	 
+	
+	 
 </tr>
 
-
+</td>
+</table>
 
   <script>
     const menuData = {
@@ -373,5 +405,4 @@
     updateSummary();
   </script>
 </body>
-
 </html>
