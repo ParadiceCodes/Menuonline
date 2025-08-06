@@ -100,7 +100,46 @@
       color: #FFFFFF;
       font-weight: bold;
 	  }
-	
+	  
+	.button-link {
+      display: block;
+      background: #ff0080;
+      color: white;
+      margin: 10px auto;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      max-width: 300px;
+    }
+	.grid-links {
+      display: grid;
+      gap: 10px;
+      margin: 20px auto;
+      max-width: 400px;
+      padding: 10px;
+    }
+    .grid-links a {
+      background: #1a002d;
+      padding: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .grid-links a:hover {
+      background: #320057;
+    }
+	.logo-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
 
     body::after {
       content: "";
@@ -123,28 +162,45 @@
 
   </style>
 </head>
-<body>
-  
-  <h1>🍔🍸  MENU'<span style="color:#FC52AE;">PARAD</span><span style="color:#04C1D6;"> ICE</span> </h1>
+   <body>
+   <!-- ////////////////////////////////////////////////////// -->
+   <header>
+  <div class="logo-container">
+    <img 
+      src="https://drive.google.com/uc?export=view&id=1oYKWfqXfKkiJfChNef1ypIFlNa1GwGfJ" 
+      alt="Logo Parad Ice" 
+      class="logo"
+    />
+  </div>
+  <h1>🍔🍹 MENU' <span>PARAD ICE</span></h1>
+</header>
+<!--//////////////////////////////////////////////////////////-->
 
 
+        <h1>🍔🍸  MENU'<span style="color:#FC52AE;">PARAD</span><span style="color:#04C1D6;"> ICE</span> </h1>
+    <header>
+       <nav>
+	     <h2>
+           <a>Snacks</a> •
+           <a>Fritti</a> •
+           <a>Burgers</a> •
+           <a>Insalate</a> •
+           <a>Messicano</a> •
+           <a>Dolci</a> •
+           <a>Drinks</a> •
+           <a>Spritz</a> •
+           <a>Birre</a>
+		 </h2>
+       </nav>
+            <a class="button-link" href="tel:+391234567890">📞 CHIAMACI</a>
+   </header>
 
-
-  <div>
-	<h2><label for="categorySelect" class="highlight">Snacks • Fritti • Burgers • Insalate • Messicano</label></h2>
-	<h2><label for="categorySelect" class="highlight">Dolci • Bevande • Drinks • Spritz • Birre</label></h2>
-	
-	
-	
-	
-	<table border="3" cellspacing="40" cellpadding="" align="center" width="50">
-	<td  bgcolor="#4D2B6B">
-
-	
-	
-    <select id="categorySelect" onchange="showProducts()">
-    <option value="">-- Seleziona --</option>
-	  
+    <div>
+	  <table border="3" cellspacing="40" cellpadding="" align="center" width="50">
+	  <td  bgcolor="#4D2B6B">
+       <h2>📋 Seleziona una categoria</h2>
+     <select id="categorySelect" onchange="showProducts()">
+       <option value="">-- Seleziona --</option>
 	  <!-- CATEGORIE -->
 	  
       <option value="Snack">Snack</option>
@@ -159,51 +215,48 @@
 	  <option value="Birre">Birre</option>
 	  <option value="Artigianali">Artigianali</option>
 	  <option value="Caffetteria">Caffetteria</option>
-	  
-	  
     </select>
-  </div>
+	 <h2><p style="margin-top: 20px;">⏰ Aperto dal martedì alla domenica:<br><strong>12:00–15:30 / 17:00–00:00</strong></p> </h2>
+    </div>
 
   <div id="productList"></div>
-
   <div id="orderSummary"> 
-    
-	<!-- TESTO CHE SCORRE -->
+	      <!-- TESTO CHE SCORRE -->
 		  <p>
 		  <font color="#00BFFF" face="Copperplate Gothic Bold" >
 		  <marquee behavior="scroll" direction="left">🔧⚠️ Stiamo aggiornando il sito per offrirti un'esperienza migliore – grazie per la tua pazienza! !!</marquee>
 		  </font>
-		  </p>
-
+		  </p>  
   </div>
 
-<tr> 
-</td>
-       <td align="center">
-      <!-- link per menu-->
-       <a href="https://drive.google.com/file/d/1evnEwlJD8_pli1PLFt9Pb9FNi4tVOAcO/view?usp=sharing"target="_blank" style="color:#ffffff; text-decoration:none;">
+    <tr> 
+    </td>
+       <td align="center" bgcolor="#4D2B6B">
+	   <div class="grid-links">
+      
+       <a href="https://drive.google.com/uc?export=download&id=1evnEwlJD8_pli1PLFt9Pb9FNi4tVOAcO"target="_blank" style="color:#ffffff; text-decoration:none;">
        <h2>📥 Menu PDF</h2>
-       </a>
-	  <!-- link per dove siamo-->
+	   
        <a href="https://www.google.it/maps/place/Via+Trionfale,+11407,+00135+Roma+RM/@41.9609568,12.4072265,17z/data=!3m1!4b1!4m6!3m5!1s0x132f5ddc0c11acc5:0x780b5061c9d63fb4!8m2!3d41.9609528!4d12.4098014!16s%2Fg%2F11csfhq2vg?hl=it&entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D"target="_blank" style="color:#ffffff; text-decoration:none;">
        <h2>📍 Dove Siamo</h2>
        </a>
-	      <!-- link per instagram -->
+	     
        <a href="https://www.instagram.com/paradicefood_drink?igsh=ZTB1eTZnM3k0eGQx"target="_blank" style="color: #962FBF; text-decoration:none;">
        <h2>     <i class="fa fa-instagram"> </i> Instagram </h2>
        </a>
-	  <!-- link per just eat-->
+	 
        <a href="http://www.google.com"target="_blank" style="color:#FF8000; text-decoration:none;">
        <h2>🍔 Just Eat</h2>
        </a>
-      <!-- link per glovo-->
+      
        <a href="http://www.google.com"target="_blank" style="color:#FFC244; text-decoration:none;">
-       <h2>🍱 Glovo</h2>
+       <h2>📦 Glovo</h2>
        </a>
-	  <!-- link per libro ingredienti-->
+	  
        <a href="http://www.google.com"target="_blank" style="color:#ffffff; text-decoration:none;">
-       <h2>📖 Consulta il Libro Allergeni</h2>
+       <h2>📚  Consulta il Libro Allergeni</h2>
        </a>
+	   </div>
      </td>
 </table>
 
@@ -389,5 +442,9 @@
     showProducts();
     updateSummary();
   </script>
+    <footer>
+    <p>© 2024 Paradice Food & Drink. Tutti i diritti riservati.</p>
+    <!-- <p><a href="/privacy.html" style="color: #aaa;">privacy </a></p> -->
+  </footer>
 </body>
 </html>
